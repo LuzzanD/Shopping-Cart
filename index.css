@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+    padding: 0.5em 1;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+   padding: 0 1em;
+   margin: 0 auto;
+   max-width: 500px;
+   height: 100vh;
+   position: relative;
+}
+
+.header {
+    background: rgba(80, 36, 22, 0.4) url(https://cdn.pixabay.com/photo/2019/04/04/15/30/hamburger-4103070_960_720.jpg);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: 50px 145px;
+    color: white;
+    padding: 1em 1em;
+    margin-bottom: 1em;
+}
+
+/* product list */
+
+.header-subtitle, 
+.header-title,
+.product-name,
+.product-desc {
+    margin: 0;
+}
+
+.product-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px lightgray solid;
+    padding: 0.8em 0.5em;
+}
+
+.product-container:nth-of-type(1){
+    border-top: 1px lightgray solid;
+}
+
+.product-image {
+    width: 15%;
+    font-size: 3em;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2em;
+    margin-right: 0.2em;
+}
+
+.product-desc {
+    color: rgba(156, 156, 156, 0.788);
+}
+
+.product-price {
+    margin-top: 0.5em; 
+    margin-bottom: 0;
+}
+
+.btn {
+    margin-left: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+     transform: scale(1.1);
+     cursor: pointer;
+     background: rgba(22, 219, 121, 0.2)
+}
+
+/* orders*/
+
+.order-container {
+    display: flex;
+    margin-top: 1em;
+    padding: 0.8em 0.5em 0;
+}
+
+.order-product-name,
+.order-pieces,
+.order-price,
+.order-total{
+    font-size: 1.3rem;
+}
+
+.order-product-name{
+    margin: 0 0.3em 0;
+}
+
+.order-pieces{
+    margin-left: 1em;
+    margin-right: 0.2em;
+}
+
+.order-total{
+    margin-left: 0.3em;
+}
+
+.remove-btn{
+    border: none;
+    background: none;
+    font-size: 0.8rem;
+    color: gray;
+    margin: 0;
+}
+.remove-btn:focus,
+.remove-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.minus-btn{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+}
+
+/* check */
+
+.check-container{
+    border-top: 2px solid darkgrey;
+    padding: 0 0.5em;
+    margin-top: 0.8em;
+    position: absolute; 
+    right: 1em;
+    left: 1em;
+    bottom: 1em;
+}
+
+.check {
+    padding: 0.8em 0;
+    display: flex;
+}
+
+.check-text,
+.check-price{
+   font-size: 1.5rem;  
+}
+
+.check-text{
+   margin: 0;
+}
+
+.check-price{
+    margin-left: auto;
+}
+
+.green-btn {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: white;
+    background-color: #16DB99;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.6em;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.check-container .green-btn:disabled{
+    background: lightgray;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* payment form */
+
+.payment-form-container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    width: 350px;
+    height: 300px;
+    padding: 1em 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0; 
+    background: white; 
+    box-shadow: 0 0 50px black;
+}
+
+.close-btn{
+    background: none;
+    border: none;
+    color: gray;
+    scale: 1.5;
+    padding: 0;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close-btn:hover,
+.close-btn:focus{
+    cursor: pointer;
+    transform: scale(1.15);
+    color: #16DB99;
+    outline: none;
+}
+
+.form-title{
+    margin: 0 0 1em;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.payment-form input {
+    font-size: 0.8rem;
+    width: 90%;
+    display: block;
+    margin: 0 auto 1.5em;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+    color: gray;
+    padding: 1em;
+}
+
+.payment-form input:hover,
+.payment-form input:focus{
+    outline: none;
+    background: rgba(22, 219, 121, 0.2);
+}
+
+.payment-form input:hover,
+.payment-form input:focus,
+.btn:hover,
+.btn:focus {
+    transform: scale(1.05);
+}
+
+
+
+

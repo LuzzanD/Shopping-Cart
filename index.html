@@ -1,0 +1,42 @@
+<html>
+    <head>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+         <link rel="stylesheet" href="index.css">
+         <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <h1 class="header-title">Andrija's dinner</h1>
+                <p class="header-subtitle">The best burgers and pizzas in town</p>
+            </header>
+            
+            <main>
+                <div id="product-list"></div>
+                <div id="order-list" class="order-list"></div>
+                
+                <div class="check-container">
+                    <div class="check">
+                        <p class="check-text">Total price:</p>
+                        <span class="check-price" id="check-price">$0</span>
+                    </div>
+                    <button id="check-btn" class="green-btn" disabled>Complete order</button>
+                </div>
+                
+                <div id="payment-form-container" class="payment-form-container">
+                    <button class="close-btn" id="close-btn">X</button>
+                    <h2 class="form-title">Enter card details</h2>
+                    <form id="payment-form" class="payment-form">
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="text" placeholder="Enter card number" required>
+                        <input type="password" placeholder="Enter CVV"required>
+                        <button id="pay-btn" class="green-btn">Pay</button>
+                    </form>
+                </div>
+            </main>
+            
+        </div>
+    <script src="index.js" type="module"></script>
+    </body>  
+</html>
